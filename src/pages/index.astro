@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+
+const title = 'The Mag';
 ---
 
 <html lang="en">
@@ -8,12 +10,14 @@ import '../styles/global.css';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>A.Magallon Blog</title>
+		<title>{title}</title>
 
 		<style>
 			h1 {
 			  color: rgb(0, 128, 107);
 			  font-size: 4rem;
+			  font-family: 'teko', sans-serif;
+
 			}
 		  </style>
 
@@ -31,7 +35,7 @@ import '../styles/global.css';
 		<a href="/blog/">Blog</a>
 		<a href="/portfolio/">Portfolio</a>
 		
-		<h1>My Website</h1>
+		<h1>{title}</h1>
 		<p>Welcome to my website!</p>
 
 	</body>
