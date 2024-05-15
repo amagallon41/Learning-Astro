@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
 
+import Navigation from '../components/Navigation.astro';
+
 const title = 'The Mag';
 ---
 
@@ -30,10 +32,7 @@ const title = 'The Mag';
 
 	<body>
 	<!-- navigation links -->
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
-		<a href="/portfolio/">Portfolio</a>
+		<Navigation />
 		
 		<h1>{title}</h1>
 		<p>Welcome to my website!</p>
