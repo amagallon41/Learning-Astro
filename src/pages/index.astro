@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
 
+import BaseLayout from '../layouts/BaseLayout.astro';
+
 import Navigation from '../components/Navigation.astro';
 
 import Header from '../components/Header.astro';
@@ -10,43 +12,6 @@ import Footer from '../components/Footer.astro';
 const title = 'The Mag';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-
-		<style>
-			h1 {
-			  color: rgb(0, 128, 107);
-			  font-size: 4rem;
-			  font-family: 'teko', sans-serif;
-
-			}
-		  </style>
-
-
-	</head>
-
-
-
-
-
-	<body>
-	<!-- navigation links -->
-		<Navigation />
-		<Header />
-		
-		<h1>{title}</h1>
-		<p>Welcome to my website!</p>
-
-	<Footer />
-	
-	<script>
-	import "../scripts/menu.js";
-	  </script>
-
-	</body>
-</html>
+<BaseLayout pageTitle={title}>
+	<h2>My awesome blog subtitle</h2>
+  </BaseLayout>
