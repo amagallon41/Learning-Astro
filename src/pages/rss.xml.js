@@ -8,4 +8,4 @@ export async function GET(context) {
     items: await pagesGlobToRssItems(import.meta.glob('./**/*.md')),
     customData: `<language>en-us</language>`,
   });
-}
+};

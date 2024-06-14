@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
 
+import BaseLayout from '../layouts/BaseLayout.astro';
+
 import Navigation from '../components/Navigation.astro';
 
 import Header from '../components/Header.astro';
@@ -10,47 +12,6 @@ import Footer from '../components/Footer.astro';
 const pageTitle = "Portfolio";
 
 ---
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Astro</title>
-
-    <style>
-    h1 {
-      color: coral;
-      fontsize: 4em;
-    }
-
-    </style>
-
-  </head>
-
-  <body>
-    <Navigation />
-    <Header />
-
-    <h1>Portfolio</h1>
-
-    <ul>
-      <li>
-        <a href= "/portfolio/project-1/">Project 1</a>
-      </li>
-      <li>
-        <a href= "/portfolio/project-2/">Project 2</a>
-      </li>
-      <li>
-        <a href= "/portfolio/project-3/">Project 3</a>
-        </li>
-      </ul>
-    </ul>
-
-
-    <Footer /> 
-
-    <script>
-      import "../scripts/menu.js";
-    </script>
-
-  </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<h2>Portfolio</h2>
+  </BaseLayout>
